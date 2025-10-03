@@ -1,85 +1,173 @@
 <template>
-  <div>
-    <!-- <Header /> -->
+  <div> 
     <HeroBanner />
-    <ProductGrid :title="'Top bán chạy'" :products="topSellingProducts" />
-    <ProductGrid :title="'Sản phẩm mới'" :products="newProducts" />
-    <BannerAd />
-    <ProductGrid :title="'Sản phẩm nổi bật'" :products="featuredProducts" />
-    <NewsSection />
-    <StoreLocator />
-    <!-- <Footer /> -->
+    
+    <ProductGrid title="sản phẩm đã xem" :products="newProducts" :showMore="true" />
+    <ProductGrid title="quà tặng phái đẹp" :products="newProducts" :showMore="true" />
+    <ProductGrid title="sản phẩm mới" :products="newProducts" :showMore="true" />
+    <ProductGrid title="sản phẩm nổi bật" :products="newProducts" :showMore="true" />
+
+    <!-- <BannerAd /> -->
+    <!-- <NewsSection /> -->
+    <!-- <StoreLocator /> --> 
   </div>
 </template>
 
-<script setup>
-// import Header from '../components/Header.vue'
-import HeroBanner from '../components/HeroBanner.vue'
-import ProductGrid from '../components/ProductGrid.vue'
-import BannerAd from '../components/BannerAd.vue'
-import NewsSection from '../components/NewsSection.vue'
-import StoreLocator from '../components/StoreLocator.vue'
-// import Footer from '../components/Footer.vue'
+<script setup> 
+import HeroBanner from "../components/HeroBanner.vue";
+import ProductGrid from "../components/ProductGrid.vue";
+// import BannerAd from "../components/BannerAd.vue";
+// import NewsSection from "../components/NewsSection.vue";
+// import StoreLocator from "../components/StoreLocator.vue"; 
 
-const topSellingProducts = [
-  { id: 1, name: "Giày A", price: "700,000 VND", image: "/shoe1.jpg" },
-]
 
-const newProducts = [
-  { id: 2, name: "Giày B", price: "1,200,000 VND", image: "/shoe2.jpg" }
-  
-]
+const newProducts = [{
+  id: 123,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-001-1.jpg","/images/products/new-products/p-001-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-002-1.jpg","/images/products/new-products/p-002-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-003-1.jpg","/images/products/new-products/p-003-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-004-1.jpg","/images/products/new-products/p-004-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-005-1.jpg","/images/products/new-products/p-005-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-006-1.jpg","/images/products/new-products/p-006-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-007-1.jpg","/images/products/new-products/p-007-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-008-1.jpg","/images/products/new-products/p-008-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-009-1.jpg","/images/products/new-products/p-009-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-010-1.jpg","/images/products/new-products/p-010-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-011-1.jpg","/images/products/new-products/p-011-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+},
+{
+  id: 124,
+  name: "Giày Thể Thao ...",
+  images: ["/images/products/new-products/p-012-1.jpg","/images/products/new-products/p-012-2.jpg"],
+  price: 715000,
+  oldPrice: 880000,
+  badge: "Mới",
+  size: "5 Size",
+  discount: 20,
+  sold: 25,
+  likes: 157
+}
+];
 
-const featuredProducts = [
-  { id: 3, name: "Giày C", price: "1,000,000 VND", image: "/shoe3.jpg" }
-   
-]
+// const featuredProducts = [{  }];
+// const topSellingProducts = [{  }];
+
 </script>
-
-
-<!-- <template>
-  <div>
-    <HeroBanner />
-
-    <section class="container mx-auto py-8">
-      <h2 class="text-xl font-bold mb-4">TOP YÊU THÍCH</h2>
-      <ProductGrid :products="topProducts" />
-    </section>
-
-    <section class="container mx-auto py-8">
-      <h2 class="text-xl font-bold mb-4">SẢN PHẨM MỚI</h2>
-      <ProductGrid :products="newProducts" />
-    </section>
-
-    <section class="container mx-auto py-8">
-      <h2 class="text-xl font-bold mb-4">SẢN PHẨM NỔI BẬT</h2>
-      <ProductGrid :products="hotProducts" />
-    </section>
-
-    <NewsSection />
-    <StoreMap />
-  </div>
-</template>
-
-<script setup>
-import HeroBanner from '~/components/HeroBanner.vue'
-import ProductGrid from '~/components/ProductGrid.vue'
-import NewsSection from '~/components/NewsSection.vue'
-import StoreMap from '~/components/StoreLocator.vue'
-
-const topProducts = [
-  { id: 1, name: "Giày Hunter X", price: "1.200.000đ", image: "/images/shoes1.jpg" },
-  { id: 2, name: "Giày Hunter Y", price: "1.000.000đ", image: "/images/shoes2.jpg" },
-  // ...
-]
-const newProducts = topProducts  
-const hotProducts = topProducts 
-
-useHead({
-  title: 'Biti’s Homepage',
-  meta: [
-    { name: 'description', content: 'Giày Biti’s nang niu tung buoc chan' }
-  ]
-})
-</script>  -->
-

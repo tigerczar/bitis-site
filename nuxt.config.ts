@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       Roboto: [400, 500, 700],
     },
     display: "swap",
-    download: true, // embed fonts  
+    download: true, 
   },
   seo: {
     meta: {

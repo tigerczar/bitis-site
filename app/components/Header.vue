@@ -112,7 +112,7 @@
           </div>
           <nav class="flex-1 overflow-y-auto divide-y uppercase">
             <NuxtLink to="/" class="block px-6 py-4">VỀ BITI'S</NuxtLink>
-            <!-- Accordion menu -->
+            <!-- accordion -->
             <button @click="toggle('brands')" class="w-full flex justify-between items-center px-6 py-4">
               Nhãn Hiệu
               <svg :class="{'rotate-90': openDrop==='brands'}" class="duration-150" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6" stroke-width="2"></path></svg>
