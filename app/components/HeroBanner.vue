@@ -1,3 +1,3 @@
 <template>
-   <h1>Hero banner</h1>
+ <h1>Hero section</h1>
 </template>

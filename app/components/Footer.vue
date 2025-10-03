@@ -1,3 +1,7 @@
 <template>
-  <h1>Footer</h1>
+  <footer> 
+    BITIS Footer here
+  </footer>
 </template>
+
+<script setup></script>

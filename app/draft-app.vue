@@ -3,6 +3,6 @@
     <!-- <NuxtRouteAnnouncer /> -->
     <!-- <NuxtWelcome /> -->
      <!-- <h1>Hello world</h1> -->
-      <NuxtPage />
+      <!-- <NuxtPage /> -->
   </div>
 </template>
