@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       Roboto: [400, 500, 700],
     },
     display: "swap",
-    download: true, 
+    download: true,
   },
   seo: {
     meta: {
@@ -33,6 +33,14 @@ export default defineNuxtConfig({
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
       link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    },
+  },
+  nitro: {
+    storage: {
+      data: {
+        driver: "vercelKV",
+        /* Vercel KV driver options */
+      },
     },
   },
 });
