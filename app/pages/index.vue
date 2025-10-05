@@ -6,8 +6,7 @@
     <ProductGrid title="quà tặng phái đẹp" :products="newProducts" :showMore="true" />
     <ProductGrid title="sản phẩm mới" :products="newProducts" :showMore="true" />
     <ProductGrid title="sản phẩm nổi bật" :products="newProducts" :showMore="true" />
-
-    <!-- Banner Ad  -->
+ 
     <BannerAdGroup />
 
     <BannerAd image="/images/ads/banner-ad-stitch.jpg" alt="Banner Flash Sale" link="/" />

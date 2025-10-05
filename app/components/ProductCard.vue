@@ -8,33 +8,31 @@
       </button>
       <span v-if="product.badge" class="bg-green-600 text-white text-xs px-2 py-0.5 rounded-lg font-semibold">{{ product.badge }}</span>
     </div>
-    <!-- product images -->
+    <!-- images -->
     <!-- <img :src="product.image" :alt="product.name" class="w-full h-80 object-contain mb-2" /> -->
     <NuxtLink to="/" class="w-full h-80 relative select-none mb-2 rounded">
       <img :src="currentImage" :alt="product.name" class="w-full h-full object-contain absolute left-0 top-0 transition-opacity duration-300" :class="{ 'opacity-100': !hover, 'opacity-0': hover }" draggable="false" />
       <img v-if="product.images[1]" :src="product.images[1]" :alt="product.name + ' hover'" class="w-full h-full object-contain absolute left-0 top-0 transition-opacity duration-300" :class="{ 'opacity-0': !hover, 'opacity-100': hover }" draggable="false" />
     </NuxtLink>
     <div class="flex flex-col flex-1">
-       <!-- size and color -->
-        <div class="flex justify-between items-center gap-2 text-xs">
-          <div class="text-xs text-black-500 mb-1"> {{ product.size || "5" }} Size</div>
-          <div class="text-xs text-black-500 mb-1"> {{ product.size || "2" }} Color</div>
-
-        </div>
+      <!-- size and color -->
+      <div class="flex justify-between items-center gap-2 text-xs">
+        <div class="text-xs text-black-500 mb-1">{{ product.size || "5" }} Size</div>
+        <div class="text-xs text-black-500 mb-1">{{ product.size || "2" }} Color</div>
+      </div>
       <!-- name -->
       <NuxtLink to="/" class="mb-1 leading-snug text-[15px]">{{ product.name }}</NuxtLink>
 
       <!-- bottom info -->
-      <div class="flex justify-between items-center gap-2 text-xs">
-        <!-- price 1 -->
-         <p class=" text-lg "> {{ product.price.toLocaleString() }} đ </p>
-
-        <!-- <div class="mb-1 text-black">  </div> -->
-        <!-- price 2 -->
-        <span v-if="product.oldPrice" class="font-normaltext-black line-through ml-2"> {{ product.oldPrice.toLocaleString() }} đ </span>
-        <!-- discount -->
-        <div v-if="product.discount" class="text-[#e71a3c] mb-1 p-[2px] border border-red-600 bg-[#ffe9ea]">-{{ product.discount }}%</div>
-        <span class="text-red " v-if="product.sold">Đã bán: {{ product.sold }}</span>
+      <div class="flex justify-between flex-wrap items-center gap-2 text-xs">
+        <div class="inline sm:block">
+           <span class="text-lg"> {{ product.price.toLocaleString() }} đ </span>
+          <!-- <div class="mb-1 text-black">  </div> -->
+          <span v-if="product.oldPrice" class="font-normaltext-black line-through ml-2"> {{ product.oldPrice.toLocaleString() }} đ </span>
+          <!-- discount -->
+          <span v-if="product.discount" class="text-[#e71a3c] mb-1 p-[2px] border border-red-600 bg-[#ffe9ea]">-{{ product.discount }}%</span>
+        </div>
+        <span class="text-red inline sm:block" v-if="product.sold">Đã bán: {{ product.sold }}</span>
         <!-- <span v-if="product.likes">Yêu thích: {{ product.likes }}</span> -->
       </div>
     </div>
