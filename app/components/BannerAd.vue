@@ -18,8 +18,8 @@
 
 <script setup>
 defineProps({
-  image: { type: String, required: true }, // đường dẫn ảnh /banner.jpg
+  image: { type: String, required: true },
   alt: { type: String, default: 'Banner quảng cáo' },
-  link: { type: String, default: '' } // nếu có link thì banner có thể click
+  link: { type: String, default: '' }
 })
 </script>

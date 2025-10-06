@@ -19,7 +19,6 @@
   </section>
 </template>
 
-
 <script setup>
 const newsList = [
   {

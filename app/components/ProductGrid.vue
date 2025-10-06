@@ -5,7 +5,6 @@
       <ProductCard v-for="prod in products" :key="prod.id" :product="prod" />
     </div>
     <div v-if="showMore" class="my-4 flex justify-center">
-      <!-- <button class="px-5 py-2 rounded font-medium hover:bg-gray-100">Còn nhiều lắm, xem thêm</button> -->
         <NuxtLink to="/" class="p-0 m-0 underline hover:bg-black hover:text-white hover:no-underline">Còn nhiều lắm, xem thêm</NuxtLink>
     </div>
   </section>

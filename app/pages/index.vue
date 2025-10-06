@@ -12,7 +12,10 @@
     <BannerAd image="/images/ads/banner-ad-stitch.jpg" alt="Banner Flash Sale" link="/" />
     
     <NewsSection />
-    <!-- <StoreLocator /> -->
+    <StoreLocator />
+
+    <Newsletter />
+    <BottomAds />
   </div>
 </template>
 
@@ -21,9 +24,10 @@ import HeroBanner from "../components/HeroBanner.vue";
 import ProductGrid from "../components/ProductGrid.vue";
 import BannerAdGroup from "../components/BannerGroupAd.vue";
 import BannerAd from "../components/BannerAd.vue";
-
 import NewsSection from "../components/NewsSection.vue";
-// import StoreLocator from "../components/StoreLocator.vue";
+import StoreLocator from "../components/StoreLocator.vue";
+import Newsletter from '../components/Newsletter.vue'
+import BottomAds   from '../components/BottomAds.vue'
 
 const newProducts = [
   {

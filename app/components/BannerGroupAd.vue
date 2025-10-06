@@ -37,7 +37,6 @@ const banners = [
 </script>
 
 <style scoped>
-/* Đảm bảo ảnh luôn bo góc và đẹp */
 .BannerAd img {
   border-radius: 12px;
   box-shadow: 0 0 0 1px #eee;
