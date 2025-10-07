@@ -10,27 +10,27 @@ const mockProduct = {
 
 describe('ProductCard', () => {
   beforeEach(() => {
-    console.log('[ProductCard] 🟢 START test case')
+    console.log('[ProductCard] ---> START test case')
   })
   afterEach(() => {
-    console.log('[ProductCard] ✅ Finish test case\n')
+    console.log('[ProductCard] ---> Finish test case\n')
   })
   it('Show correct name and price', () => {
-    console.log('  ● Check render name and price')
+    console.log('  --> Check render name and price')
     const wrapper = mount(ProductCard, { props: { product: mockProduct } })
     expect(wrapper.text()).toContain('Giày Bitis Hunter')
     expect(wrapper.text()).toContain('715,000')
-    console.log('  ✔️ Render ok')
+    console.log(' ==> Render ok')
   })
   it('Change image product when hover', async () => {
-    console.log('  ● Hover card check image')
+    console.log('  --> Hover card check image')
     const wrapper = mount(ProductCard, { props: { product: mockProduct } })
     await wrapper.trigger('mouseenter')
     const imgs = wrapper.findAll('img')
     expect(imgs[1].classes().join(' ')).toMatch(/opacity|show|block/i)
-    console.log('  ✔️ Image hover is correct')
+    console.log('  --> Image hover is correct')
     await wrapper.trigger('mouseleave')
     expect(imgs[0].classes().join(' ')).toMatch(/opacity|show|block/i)
-    console.log('  ✔️ Change to main image when mouleave')
+    console.log('  --> Change to main image when mouleave')
   })
 })
