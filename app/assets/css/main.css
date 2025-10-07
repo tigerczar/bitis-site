@@ -5,3 +5,16 @@
 body {
   @apply font-Inter bg-white text-gray-800;
 } */
+
+/* body, html {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+} */

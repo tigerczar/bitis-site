@@ -1,12 +1,12 @@
 <template>
-  <section class="my-8 w-full max-w-7xl m-0 m-auto">
-    <h2 class="text-black text-2xl  mb-6">TIN TỨC BITIS</h2>
+  <section class="my-8 w-full max-w-7xl m-0 m-auto p-3 ">
+    <h2 class="text-black text-sm md:text-xl  mb-6">TIN TỨC BITIS</h2>
     <div class="flex flex-col md:flex-row gap-6">
       <div v-for="news in newsList" :key="news.id" class="bg-white shadow overflow-hidden flex-1 flex flex-col  hover:shadow-lg transition">
         <NuxtLink to="/"><img :src="news.image" :alt="news.title" class="w-full h-48 object-cover" /></NuxtLink>
         <div class="flex-1 p-4 flex flex-col justify-between">
           <div>
-            <NuxtLink to="/"><h3 class=" mb-2 text-lg leading-tight line-clamp-2 hover:text-[#1b4ea0]">{{ news.title }}</h3></NuxtLink>
+            <NuxtLink to="/"><h3 class=" mb-2 text-sm md:text-lg leading-tight line-clamp-2 hover:text-[#1b4ea0]">{{ news.title }}</h3></NuxtLink>
             <div class="text-gray-500 text-sm mb-2 line-clamp-2">{{ news.summary }}</div>
           </div>
           <div class="flex justify-between items-center text-xs text-gray-500 mt-2">

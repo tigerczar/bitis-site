@@ -26,7 +26,7 @@
       <div class="flex justify-between flex-wrap items-center gap-2 text-xs">
         <div class="inline sm:block">
            <span class="text-lg"> {{ product.price.toLocaleString() }} đ </span>
-          <span v-if="product.oldPrice" class="font-normaltext-black line-through ml-2"> {{ product.oldPrice.toLocaleString() }} đ </span>
+          <span v-if="product.oldPrice" class="font-normaltext-black line-through md:ml-1 mx-1 ml-0"> {{ product.oldPrice.toLocaleString() }} đ </span>
           <!-- discount -->
           <span v-if="product.discount" class="text-[#e71a3c] mb-1 p-[2px] border border-red-600 bg-[#ffe9ea]">-{{ product.discount }}%</span>
         </div>

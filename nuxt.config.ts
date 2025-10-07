@@ -6,12 +6,13 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxtjs/seo"],
   tailwindcss: {
-    viewer: false, //
+    viewer: false, 
   },
   googleFonts: {
     families: {
       Inter: [400, 500, 700],
       Roboto: [400, 500, 700],
+      Montserrat: [400, 500, 700]
     },
     display: "swap",
     download: true,
@@ -22,8 +23,7 @@ export default defineNuxtConfig({
       description: "Website bán giày Biti’s Hunter clone bằng Nuxt 4",
       themeColor: "#ffffff",
       ogImage: "/og-image.png", // add img review
-    },
-    // canonical: "https://yourdomain.com",
+    }, 
   },
   app: {
     head: {
@@ -38,8 +38,7 @@ export default defineNuxtConfig({
   nitro: {
     storage: {
       data: {
-        driver: "vercelKV",
-        /* Vercel KV driver options */
+        driver: "vercelKV", 
       },
     },
   },

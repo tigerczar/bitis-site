@@ -8,7 +8,7 @@
       class="w-full object-cover transition-all duration-500"
       :class="[isMobile ? 'h-[540px]' : 'h-[430px] md:h-[480px] lg:h-[600px]']"
     />
-    <!-- Prev/Next -->
+    <!-- arrow btn control -->
     <button v-if="!isMobile" @click="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-30 text-white p-2 rounded-full z-20">
       <svg width="28" height="28" fill="none" stroke="currentColor"><path d="M16 20l-8-8 8-8" stroke-width="2"/></svg>
     </button>

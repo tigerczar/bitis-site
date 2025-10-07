@@ -6,13 +6,7 @@
         :alt="alt"
         class=" hover:scale-[1.03] transition w-full object-cover"
       />
-    </a>
-    <!-- <img
-      v-else
-      :src="image"
-      :alt="alt"
-      class="rounded-lg shadow-lg w-full max-w-5xl object-cover"
-    /> -->
+    </a> 
   </div>
 </template>
 
