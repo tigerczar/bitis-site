@@ -43,7 +43,7 @@
       </div>
       <div>
         <div class="mb-4 pt">
-          <img src="~assets/images/bitis-logo.svg" alt="Bitis logo" class="w-[110px] mb-2" />
+          <img src="/images/bitis-logo.svg" alt="Bitis logo" class="w-[110px] mb-2" />
         </div>
         <div class="text-gray-700 text-">
           <h5>CÔNG TY TNHH SẢN XUẤT HÀNG TIÊU DÙNG BÌNH TIÊN</h5><br />
@@ -77,7 +77,7 @@
         </button>
         <transition name="transition">
           <div class="mb-4" v-if="openIdx === i">
-            <img src="~assets/images/bitis-logo.svg" alt="Biti's logo" class="h-10 mb-2" />
+            <img src="/images/bitis-logo.svg" alt="Biti's logo" class="h-10 mb-2" />
             <div class="text-gray-700 text-base">
               <h5>CÔNG TY TNHH SẢN XUẤT HÀNG TIÊU DÙNG BÌNH TIÊN</h5><br />
               <p class="text-[13px]">

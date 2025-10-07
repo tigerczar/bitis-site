@@ -23,7 +23,7 @@
 const newsList = [
   {
     id: 1,
-    image: '/images/news/article-img-01.png',
+    image: '/images/news/article-img-01.jpg',
     title: 'BITIS LÀ ĐẠI DIỆN VIỆT NAM DUY NHẤT ĐƯỢC VINH DANH TẠI HẠNG MỤC "INVESTMENT IN PEOPLE" (ĐẦU TƯ VÀO CON NGƯỜI) - GIẢI THƯỞNG ASIA RESPONSIBLE ENTERPRISE AWARDS (AREA) 2025',
     summary: 'Dự án kiến tạo văn hoá hạnh phúc tại Bitis - đã được xướng tên tại AREA 2025, một trong những giải thưởng uy tín hàng đầu khu vực Châu Á - Thái Bình Dương nhằm tôn vinh các doanh nghiệp có đóng góp nổi bật về trách nhiệm xã hội, do Enterprise Asia sáng lập từ năm 2011',
     date: '07/07/2025',

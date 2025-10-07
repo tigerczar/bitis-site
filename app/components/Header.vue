@@ -11,7 +11,7 @@
       <div class="flex items-center justify-center space-x-4">
         <NuxtLink to="/">Tìm cửa hàng</NuxtLink>
         <NuxtLink to="/">Kiểm tra đơn hàng</NuxtLink>
-        <img src="~/assets/images/vn-flag.png" alt="VN" class="h-4 ml-2" />
+        <img src="/images/vn-flag.png" alt="VN" class="h-4 ml-2" />
         <select class="bg-transparent text-white">
           <option value="vn">VN</option>
           <option value="en">EN</option>
@@ -26,7 +26,7 @@
     <!-- main menu -->
     <div class="flex items-center justify-between px-8 py-2">
       <NuxtLink to="/">
-        <img src="~/assets/images/bitis-logo.svg" alt="Bitis logo" class="h-12" />
+        <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-12" />
       </NuxtLink>
       <nav class="flex items-center gap-8 uppercase text-[#24232A] text-sm">
         <NuxtLink to="/">Về Biti's</NuxtLink>
@@ -80,10 +80,10 @@
       <button @click="drawer = true">
           <svg  width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
       </button>
-      <img src="~/assets/images/vn-flag.svg" alt="VN" class="h-5"/>
+      <img src="/images/vn-flag.svg" alt="VN" class="h-5"/>
       <span class="ml-1">VN</span>
       <NuxtLink to="/">
-        <img src="~/assets/images/bitis-logo.svg" alt="Bitis logo" class="h-8 mx-2"/>
+        <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-8 mx-2"/>
       </NuxtLink>
       <div class="flex gap-3">
         <NuxtLink to="/">
@@ -118,7 +118,7 @@
             <button @click="drawer = false">
               <svg width="26" height="26" fill="none" stroke="currentColor"><path d="M6 6l14 14M20 6L6 20" stroke-width="2" stroke-linecap="round"/></svg>
             </button>
-            <img src="~/assets/images/bitis-logo.svg" alt="Bitis logo" class="h-7"/>
+            <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-7"/>
             <span></span>
           </div>
           <nav class="flex-1 overflow-y-auto divide-y uppercase">

@@ -13,12 +13,12 @@
 
 <script setup>
 const ads = [
-  { image: "/images/ads/ad-b/ad-b-01.png", alt: "balo", link: "/" },
-  { image: "/images/ads/ad-b/ad-b-02.png", alt: "effortless", link: "/" },
-  { image: "/images/ads/ad-b/ad-b-03.png", alt: "embrace", link: "/" },
-  { image: "/images/ads/ad-b/ad-b-04.png", alt: "elise", link: "/" },
-  { image: "/images/ads/ad-b/ad-b-05.png", alt: "helio", link: "/" },
-  { image: "/images/ads/ad-b/ad-b-06.png", alt: "litebound", link: "/" },
+  { image: "/images/ads/ad-b/ad-b-01.jpg", alt: "balo", link: "/" },
+  { image: "/images/ads/ad-b/ad-b-02.jpg", alt: "effortless", link: "/" },
+  { image: "/images/ads/ad-b/ad-b-03.jpg", alt: "embrace", link: "/" },
+  { image: "/images/ads/ad-b/ad-b-04.jpg", alt: "elise", link: "/" },
+  { image: "/images/ads/ad-b/ad-b-05.jpg", alt: "helio", link: "/" },
+  { image: "/images/ads/ad-b/ad-b-06.jpg", alt: "litebound", link: "/" },
   { image: "/images/ads/ad-b/ad-b-07.jpg", alt: "ucare", link: "/" },
   { image: "/images/ads/ad-b/ad-b-08.jpg", alt: "shoes", link: "/" },
 ];

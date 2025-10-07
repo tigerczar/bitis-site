@@ -4,14 +4,15 @@
     <div class="flex flex-col md:flex-row gap-6">
       <!-- List location -->
       <div class="md:w-96 w-full">
-        <select v-model="selectedProvince" class="w-full border rounded px-3 py-2 mb-3">
+        <select data-test="city-select" v-model="selectedProvince" class="w-full border rounded px-3 py-2 mb-3">
           <option value="">Tất cả</option>
           <option v-for="pr in provinces" :key="pr" :value="pr">{{ pr }}</option>
         </select>
         <div class="bg-white rounded shadow p-4 h-[480px] flex-shrink-0 overflow-auto">
           <ul>
-            <li v-for="store in filteredStores" :key="store.id" class="py-2 border-b last:border-b-0">
-              <div class="flex items-center gap-2 mb-1">
+            <li v-for="store in filteredStores" :key="store.id" data-test="store-item" class="py-2 border-b last:border-b-0">
+             <NuxtLink to="/">
+               <div class="flex items-center gap-2 mb-1">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="18" height="18" x="0" y="0" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
                   <g>
                     <g xmlns="http://www.w3.org/2000/svg">
@@ -27,6 +28,7 @@
               <div class="text-xs text-gray-600">
                 {{ store.address }}
               </div>
+             </NuxtLink>
             </li>
           </ul>
         </div>

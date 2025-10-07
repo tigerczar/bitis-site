@@ -19,10 +19,10 @@ export default defineNuxtConfig({
   },
   seo: {
     meta: {
-      title: "Biti’s Clone - Nuxt 4",
-      description: "Website bán giày Biti’s Hunter clone bằng Nuxt 4",
+      title: "Bitis site",
+      description: "Website bán giày Bitis",
       themeColor: "#ffffff",
-      ogImage: "/og-image.png", // add img review
+      ogImage: "/images/bitis-logo.svg",
     }, 
   },
   app: {
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         { name: "description", content: "Website ecommerce Bitis" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
-      link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+      link: [{ rel: "icon", type: "image/png", href: "/favicon.ico" }],
     },
   },
   nitro: {

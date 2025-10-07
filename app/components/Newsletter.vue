@@ -9,7 +9,7 @@
     <p class="text-white text-center md:text-right text-base">Để nhận các thông tin mới từ Biti's và các chương trình khuyến mãi hấp dẫn</p>
     </div>
     
-    <form  class="flex mx-4 w-full h-[45px] mt-1">
+    <form @submit.prevent="submit" class="flex mx-4 w-full h-[45px] mt-1">
       <input
         v-model="email"
         type="email"
@@ -28,5 +28,19 @@
 </template>
 
 <script setup>
- 
+ import { ref } from 'vue'
+const email = ref('')
+const success = ref(false)
+const error = ref('')
+
+function submit() { 
+  if (!email.value.match(/^[\w-.]+@[\w-]+\.[a-z]{2,}$/i)) {
+    error.value = 'Email không hợp lệ'
+    success.value = false
+  } else { 
+    success.value = true
+    error.value = ''
+    email.value = ''
+  }
+}
 </script>
