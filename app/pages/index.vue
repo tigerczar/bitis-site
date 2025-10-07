@@ -8,12 +8,10 @@
     <ProductGrid title="sản phẩm nổi bật" :products="newProducts" :showMore="true" />
  
     <BannerAdGroup />
-
     <BannerAd image="/images/ads/banner-ad-stitch.jpg" alt="Banner Flash Sale" link="/" />
     
     <NewsSection />
     <StoreLocator />
-
     <Newsletter />
     <BottomAds />
   </div>
