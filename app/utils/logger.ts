@@ -1,11 +1,4 @@
 // app/utils/logger.ts
-// A robust, environment-aware logging service with:
-// - Level thresholding (trace, debug, info, warn, error, fatal)
-// - JSON or pretty output
-// - Redaction of sensitive fields
-// - Contextual metadata and child loggers
-// - Correlation/trace IDs support
-// - Simple timers for duration measurements
 
 export type LogLevel = 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'fatal'
 
