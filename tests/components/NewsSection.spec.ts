@@ -17,8 +17,7 @@ describe('NewsSection', () => {
 
   it('Show correct Title & Summary', () => {
     const wrapper = mount(NewsSection)
-    // Tên class hoặc selector cho tiêu đề, summary
-    const newsTitles = wrapper.findAll('.news-title')
+     const newsTitles = wrapper.findAll('.news-title')
     const newsSummaries = wrapper.findAll('.news-summary')
     expect(newsTitles[0].text()).toContain('BITIS LÀ ĐẠI DIỆN VIỆT NAM')
     expect(newsSummaries[0].text()).toContain('Dự án kiến tạo') 

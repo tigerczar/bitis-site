@@ -1,14 +1,24 @@
+// import { defineConfig } from 'vitest/config'
+ 
+
 import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
-import { resolve } from 'path'
+import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  test: { environment: 'jsdom' },
   resolve: {
     alias: {
-      '@': resolve(__dirname, './'),
-      '~': resolve(__dirname, './')
-    }
-  }
+      '~': path.resolve(__dirname, './'),
+    },
+  },
+  test: {
+    globals: true,             
+    environment: 'jsdom', 
+    setupFiles: ['./tests/setup/test-setup.ts'],  
+    coverage: {
+      reporter: ['text', 'html'],
+      exclude: ['node_modules', '.nuxt'],
+    },
+  },
 })

@@ -35,14 +35,26 @@
             Nhãn Hiệu
             <svg class="w-4 h-4" viewBox="0 0 24 24" stroke="currentColor" fill="none"><path d="M19 9l-7 7-7-7" stroke-width="2"/></svg>
           </button>
-          <div class="absolute left-0 mt-2 w-64 bg-white border rounded shadow z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition duration-150">
+          <div class="absolute left-0 mt-0 w-64 bg-white border rounded shadow z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition duration-150">
             <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Biti's Hunter</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Gosto</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Êmbrace</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100">Helio By Bitis</NuxtLink>
           </div>
         </div>
-        <NuxtLink to="/">NAM</NuxtLink>
+        <div class="relative group">
+          <button class="flex items-center gap-1 uppercase">
+            NAM
+            <svg class="w-4 h-4" viewBox="0 0 24 24" stroke="currentColor" fill="none"><path d="M19 9l-7 7-7-7" stroke-width="2"/></svg>
+          </button>
+          <div class="absolute left-0 mt-0 w-64 bg-white border rounded shadow z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition duration-150">
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Hunter</NuxtLink>
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Sandal</NuxtLink>
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Giày thể thao</NuxtLink>
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100">Giày công sở</NuxtLink>
+          </div>
+        </div>
+        <!-- <NuxtLink to="/">NAM</NuxtLink> -->
         <NuxtLink to="/">NỮ</NuxtLink>
         <NuxtLink to="/">TEEN NAM</NuxtLink>
         <NuxtLink to="/">TEEN NỮ</NuxtLink>
