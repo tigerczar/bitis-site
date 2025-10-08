@@ -105,7 +105,11 @@
           <svg  width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
       </button>
       <img src="/images/vn-flag.svg" alt="VN" class="h-5" loading="lazy" decoding="async"/>
-      <span class="ml-1">VN</span>
+      <!-- <span class="ml-1">VN</span> -->
+       <select class="bg-transparent text-black">
+          <option value="vn">VN</option>
+          <option value="en">EN</option>
+        </select>
       <NuxtLink to="/">
         <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-8 mx-2" width="100" height="32" decoding="async"/>
       </NuxtLink>
@@ -127,8 +131,8 @@
         </NuxtLink>
       </div>
     </div>
-    <div class="relative">
-      <input class="w-full py-3 px-2 pl-4 pr-12 text-lg bg-gray-100 rounded" placeholder="Bạn cần tìm gì..." />
+    <div class="relative border border-red p-1">
+      <input class="w-full py-2 px-1 pl-3 pr-8 text-lg bg-gray-100 rounded" placeholder="Bạn cần tìm gì..." />
       <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black text-white w-11 h-11 flex items-center justify-center rounded">
         <svg width="22" height="22" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8" stroke-width="2"/><line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="2" stroke-linecap="round"/></svg>
       </button>

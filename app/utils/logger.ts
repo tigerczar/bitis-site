@@ -16,8 +16,7 @@ const DEFAULT_LEVEL: LogLevel = ((env.LOG_LEVEL as LogLevel) || (env.NODE_ENV ==
 const OUTPUT_FORMAT: 'json' | 'pretty' = (env.LOG_FORMAT as 'json' | 'pretty') || (env.NODE_ENV === 'production' ? 'json' : 'pretty')
 const DEFAULT_PREFIX = env.LOG_PREFIX || 'NuxtApp'
 
-// Keys that should be masked in logs
-const REDACT_KEYS = new Set<string>([
+ const REDACT_KEYS = new Set<string>([
   'password', 'pwd', 'pass', 'secret', 'token', 'accessToken', 'refreshToken', 'authorization', 'auth', 'email', 'phone', 'creditCard', 'cardNumber'
 ])
 
