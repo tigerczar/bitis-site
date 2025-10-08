@@ -11,9 +11,14 @@
 </template>
 
 <script setup>
+import {Logger} from '~/utils/logger'
+
 defineProps({
   image: { type: String, required: true },
   alt: { type: String, default: 'Banner quảng cáo' },
   link: { type: String, default: '' }
 })
+
+Logger.info('Banner loaded', { component: 'BannerAd' })
+
 </script>

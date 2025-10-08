@@ -11,24 +11,24 @@
       <div class="flex items-center justify-center space-x-4">
         <NuxtLink to="/">Tìm cửa hàng</NuxtLink>
         <NuxtLink to="/">Kiểm tra đơn hàng</NuxtLink>
-        <img src="/images/vn-flag.png" alt="VN" class="h-4 ml-2" />
+        <img src="/images/vn-flag.png" alt="VN" class="h-4 ml-2" loading="lazy" decoding="async" />
         <select class="bg-transparent text-white">
           <option value="vn">VN</option>
           <option value="en">EN</option>
         </select>
         <!-- <button class="ml-4 bg-blue-600 rounded px-3 py-1 text-xs font-bold uppercase">Bán hàng B2B</button> -->
           <button class=" p-0 bg-transparent border-none w-[120px]"> 
-          <img class="rounded-[40px]" src="/images/b2b-button-img.jpg" alt="B2B button">
+          <img class="rounded-[40px]" src="/images/b2b-button-img.jpg" alt="B2B button" loading="lazy" decoding="async">
         </button> 
       </div>
     </div>
 
     <!-- main menu -->
-    <div class="flex items-center justify-between px-8 py-2">
+    <div class="flex items-center justify-between px-8 py-2 borer border-yellow">
       <NuxtLink to="/">
-        <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-12" />
+        <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-12" width="120" height="48" decoding="async" />
       </NuxtLink>
-      <nav class="flex items-center gap-8 uppercase text-[#24232A] text-sm">
+      <nav  v-if="isClient" class="flex items-center gap-8 uppercase text-[#24232A] text-sm">
         <NuxtLink to="/">Về Biti's</NuxtLink>
         <div class="relative group ">
           <button class="flex items-center gap-1 uppercase">
@@ -51,11 +51,23 @@
             <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Hunter</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Sandal</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Giày thể thao</NuxtLink>
-            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100">Giày công sở</NuxtLink>
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100">Giày tây</NuxtLink>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="flex items-center gap-1 uppercase">
+            Nữ
+            <svg class="w-4 h-4" viewBox="0 0 24 24" stroke="currentColor" fill="none"><path d="M19 9l-7 7-7-7" stroke-width="2"/></svg>
+          </button>
+          <div class="absolute left-0 mt-0 w-64 bg-white border rounded shadow z-20 opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto pointer-events-none transition duration-150">
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Giày Hunter</NuxtLink>
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Sandal</NuxtLink>
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100 border-b">Giày thể thao</NuxtLink>
+            <NuxtLink to="/" class="block px-6 py-4 hover:bg-gray-100">Giày cao gót</NuxtLink>
           </div>
         </div>
         <!-- <NuxtLink to="/">NAM</NuxtLink> -->
-        <NuxtLink to="/">NỮ</NuxtLink>
+        <!-- <NuxtLink to="/">NỮ</NuxtLink> -->
         <NuxtLink to="/">TEEN NAM</NuxtLink>
         <NuxtLink to="/">TEEN NỮ</NuxtLink>
         <NuxtLink to="/">BÉ TRAI</NuxtLink>
@@ -89,13 +101,13 @@
   <!-- mobile -->
   <header class="md:hidden bg-white border-b">
     <div class="flex items-center justify-between px-4 py-2">
-      <button @click="drawer = true">
+      <button @click="openDrawer()">
           <svg  width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
       </button>
-      <img src="/images/vn-flag.svg" alt="VN" class="h-5"/>
+      <img src="/images/vn-flag.svg" alt="VN" class="h-5" loading="lazy" decoding="async"/>
       <span class="ml-1">VN</span>
       <NuxtLink to="/">
-        <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-8 mx-2"/>
+        <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-8 mx-2" width="100" height="32" decoding="async"/>
       </NuxtLink>
       <div class="flex gap-3">
         <NuxtLink to="/">
@@ -124,16 +136,16 @@
 
     <!-- drawer menu -->
     <transition name="fade">
-      <div v-if="drawer" class="fixed inset-0 bg-black/50 z-50" @click.self="drawer = false">
+      <div v-if="drawer" class="fixed inset-0 bg-black/50 z-50" @click.self="closeDrawer()">
         <aside class="fixed top-0 left-0 bg-white h-full w-72 max-w-full flex flex-col z-50">
           <div class="flex items-center justify-between p-4 border-b">
-            <button @click="drawer = false">
+            <button @click="closeDrawer()">
               <svg width="26" height="26" fill="none" stroke="currentColor"><path d="M6 6l14 14M20 6L6 20" stroke-width="2" stroke-linecap="round"/></svg>
             </button>
-            <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-7"/>
+            <img src="/images/bitis-logo.svg" alt="Bitis logo" class="h-7" width="100" height="28" decoding="async"/>
             <span></span>
           </div>
-          <nav class="flex-1 overflow-y-auto divide-y uppercase">
+          <nav  v-if="isClient" class="flex-1 overflow-y-auto divide-y uppercase">
             <NuxtLink to="/" class="block px-6 py-4">VỀ BITI'S</NuxtLink>
             <!-- accordion -->
             <button @click="toggle('brands')" class="w-full flex justify-between items-center px-6 py-4">
@@ -165,13 +177,32 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import {Logger} from '~/utils/logger'
+
 const drawer = ref(false)
 const openDrop = ref('')
 function toggle(v) {
   openDrop.value = (openDrop.value === v ? '' : v)
 }
+
+function handleSearch(keyword) {
+  Logger.info('Search is handle', { keyword })
+}
+
+function handleUserMenu(action) {
+  Logger.debug('User is handle', { action })
+}
+
+function openDrawer() { drawer.value = true }
+function closeDrawer() { drawer.value = false }
+
+const isClient = ref(false);
+onMounted(() => { isClient.value = true; })
+
+
 </script>
+
 <style scoped>
 .fade-enter-active, .fade-leave-active { transition: opacity .2s }
 .fade-enter-from, .fade-leave-to { opacity:0 }
@@ -180,4 +211,5 @@ function toggle(v) {
   .md\:block { display:block }
   .md\:hidden { display:none }
 }
+
 </style>

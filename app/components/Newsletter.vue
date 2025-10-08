@@ -28,19 +28,36 @@
 </template>
 
 <script setup>
- import { ref } from 'vue'
+ import { ref, onMounted } from 'vue'
+ import {Logger} from '~/utils/logger'
 const email = ref('')
 const success = ref(false)
 const error = ref('')
 
+onMounted(() => {
+  Logger.info('Newsletter mounted')
+})
+
 function submit() { 
+  Logger.info('Submit triggered', { input: email.value })
+
   if (!email.value.match(/^[\w-.]+@[\w-]+\.[a-z]{2,}$/i)) {
     error.value = 'Email không hợp lệ'
     success.value = false
+    Logger.warn('Invalid email format', { email: email.value })
   } else { 
     success.value = true
     error.value = ''
     email.value = ''
+    Logger.info('Email correct, register successful', { email: email.value })
   }
+}
+
+function onSubmit(data) {
+  Logger.info('Newsletter submit', { email: data.email })
+}
+
+function onError(err) {
+  Logger.warn('Newsletter error', err)
 }
 </script>

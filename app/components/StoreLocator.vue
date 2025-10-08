@@ -43,6 +43,7 @@
 
 <script setup>
 import { ref, computed } from "vue";
+import {Logger} from '../utils/logger'
 const stores = [
   {
     id: 1,
@@ -98,4 +99,14 @@ const selectedProvince = ref("");
 const filteredStores = computed(() => (selectedProvince.value ? stores.filter((x) => x.province === selectedProvince.value) : stores));
 
 const mapSrc = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1959.9296004389316!2d106.630362!3d10.745333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e7f6a83325f%3A0x6657f975fcb4512d!2zxJAuIENo4bujIEzhu5tuLCBwaMaw4budbmcgMTEsIFF14bqtbiA2LCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2sus!4v1759668151416!5m2!1sen!2sus";
+
+function selectStore(store) {
+  Logger.info('User select store', store)
+ }
+
+function onFilterProvince(province) {
+  Logger.debug('User filter province', { province })
+}
+
+
 </script>

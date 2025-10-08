@@ -37,13 +37,13 @@
        
          <!-- B2B Button -->
         <button class="mt-4 p-0 bg-transparent border-none w-[160px]"> 
-          <img class="rounded-[40px]" src="/images/b2b-button-img.jpg" alt="b2b button">
+          <img class="rounded-[40px]" src="/images/b2b-button-img.jpg" alt="b2b button" loading="lazy" decoding="async">
         </button>
 
       </div>
       <div>
         <div class="mb-4 pt">
-          <img src="/images/bitis-logo.svg" alt="Bitis logo" class="w-[110px] mb-2" />
+          <img src="/images/bitis-logo.svg" alt="Bitis logo" class="w-[110px] mb-2" loading="lazy" decoding="async" />
         </div>
         <div class="text-gray-700 text-">
           <h5>CÔNG TY TNHH SẢN XUẤT HÀNG TIÊU DÙNG BÌNH TIÊN</h5><br />
@@ -65,19 +65,16 @@
         </button>
         <ul v-if="openIdx === i" class="mt-2 space-y-2 text-[13px] text-gray-700">
           <li v-for="item in section.items" :key="item">{{ item }}</li>
-        </ul>
-        <!-- <ul v-if="openIdx === i" class="mt-2 space-y-2 text-base text-gray-700">
-          <li v-for="item in section.items" :key="item">{{ item }}</li>
-        </ul> -->
+        </ul> 
       </div>
       <div class="border-b last:border-b-0 py-3">
-        <button class="flex items-center w-full justify-between text-lg" @click="toggle(i)">
+        <button class="flex items-center w-full justify-between text-lg" @click="toggle(mobileSections.length)">
           Thông tin địa chỉ
-          <svg :class="{ 'rotate-180': openIdx === i }" width="24" height="24" fill="none" stroke="#111"><path d="M8 10l4 4 4-4" stroke-width="2" /></svg>
+          <svg :class="{ 'rotate-180': openIdx === mobileSections.length }" width="24" height="24" fill="none" stroke="#111"><path d="M8 10l4 4 4-4" stroke-width="2" /></svg>
         </button>
         <transition name="transition">
-          <div class="mb-4" v-if="openIdx === i">
-            <img src="/images/bitis-logo.svg" alt="Biti's logo" class="h-10 mb-2" />
+          <div class="mb-4" v-if="openIdx === mobileSections.length">
+            <img src="/images/bitis-logo.svg" alt="Biti's logo" class="h-10 mb-2" loading="lazy" decoding="async" />
             <div class="text-gray-700 text-base">
               <h5>CÔNG TY TNHH SẢN XUẤT HÀNG TIÊU DÙNG BÌNH TIÊN</h5><br />
               <p class="text-[13px]">
@@ -105,7 +102,7 @@
       </div>
 
       <div class="sm:w-[33%] w-full flex justify-center items-center">
-        <img class="max-w-[100px]" src="/images/bocongthuong-certi.png" alt="">
+        <img class="max-w-[100px]" src="/images/bocongthuong-certi.png" alt="" loading="lazy" decoding="async">
       </div>
 
       <div class="sm:w-[33%] w-full leading-6">Giấy CNĐKDN: 0301340497 được cấp ngày 20/01/1992, được sửa đổi lần thứ 25 ngày 27/01/2022 bởi Sở Kế hoạch và Đầu tư TPHCM</div>

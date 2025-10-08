@@ -3,9 +3,9 @@
     <div class="flex flex-wrap justify-center w-full">
       <div v-for="(ad, idx) in ads" :key="idx" class="flex-1 sm:min-w-[12.5%] min-w-[25%] shadow hover:shadow-lg overflow-hidden  ">
         <a v-if="ad.link" :href="ad.link" target="_blank" rel="noopener">
-          <img :src="ad.image" :alt="ad.alt" class="object-cover w-full h-full transition hover:scale-105 duration-300" />
+          <img :src="ad.image" :alt="ad.alt" class="object-cover w-full h-full transition hover:scale-105 duration-300" loading="lazy" decoding="async" />
         </a>
-        <img v-else :src="ad.image" :alt="ad.alt" class="object-cover w-full h-full" />
+        <img v-else :src="ad.image" :alt="ad.alt" class="object-cover w-full h-full" loading="lazy" decoding="async" />
       </div>
     </div>
   </section>

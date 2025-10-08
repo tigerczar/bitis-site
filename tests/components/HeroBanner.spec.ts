@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { mount } from "@vue/test-utils";
-import HeroBanner from "../../app/components/HeroBanner.vue";
+import HeroBanner from "~/components/HeroBanner.vue";
 
 beforeEach(() => {
   vi.useFakeTimers();

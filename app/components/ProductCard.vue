@@ -21,9 +21,9 @@
 
     <!-- images -->
     <!-- <img :src="product.image" :alt="product.name" class="w-full h-80 object-contain mb-2" /> -->
-    <NuxtLink to="/" class="w-full h-80 relative select-none mb-2 rounded">
-      <img :src="currentImage" :alt="product.name" class="w-full h-full object-contain absolute left-0 top-0 transition-opacity duration-300" :class="{ 'opacity-100': !hover, 'opacity-0': hover }" draggable="false" />
-      <img v-if="product.images[1]" :src="product.images[1]" :alt="product.name + ' hover'" class="w-full h-full object-contain absolute left-0 top-0 transition-opacity duration-300" :class="{ 'opacity-0': !hover, 'opacity-100': hover }" draggable="false" />
+    <NuxtLink to="/" class="w-full h-60 sm:h-80 relative select-none mb-2 rounded">
+      <img :src="currentImage" :alt="product.name" class="w-full h-full object-contain absolute left-0 top-0 transition-opacity duration-300" :class="{ 'opacity-100': !hover, 'opacity-0': hover }" draggable="false" loading="lazy" decoding="async" />
+      <img v-if="product.images[1]" :src="product.images[1]" :alt="product.name + ' hover'" class="w-full h-full object-contain absolute left-0 top-0 transition-opacity duration-300" :class="{ 'opacity-0': !hover, 'opacity-100': hover }" draggable="false" loading="lazy" decoding="async" />
     </NuxtLink>
 
     <div class="flex flex-col flex-1">
@@ -36,7 +36,7 @@
       <!-- bottom info -->
       <div class="flex justify-between flex-wrap items-center gap-2 text-xs">
         <div class="inline sm:block">
-          <span class="text-lg sm:text-base"> {{ product.price.toLocaleString() }} đ </span>
+          <span class="text-[16px] sm:text-lg"> {{ product.price.toLocaleString() }} đ </span>
           <span v-if="product.oldPrice" class="font-normal text-black line-through md:ml-1 mx-1 ml-0"> {{ product.oldPrice.toLocaleString() }} đ </span>
           <!-- discount -->
           <span v-if="product.discount" class="text-[#e71a3c] mb-1 p-[2px] border border-red-600 bg-[#ffe9ea]">-{{ product.discount }}%</span>

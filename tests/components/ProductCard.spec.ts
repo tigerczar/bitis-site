@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { mount } from "@vue/test-utils";
-import ProductCard from "../../app/components/ProductCard.vue";
+import ProductCard from "~/components/ProductCard.vue";
 
 const mockProduct = {
   name: "Giày Bitis Hunter",
@@ -15,6 +15,7 @@ describe("ProductCard", () => {
   afterEach(() => {
     console.log("[ProductCard] ---> Finish test case\n");
   });
+
   it("Show correct name and price", () => {
     console.log("  --> Check render name and price");
     const wrapper = mount(ProductCard, { props: { product: mockProduct } });
@@ -22,6 +23,7 @@ describe("ProductCard", () => {
     expect(wrapper.text()).toContain("715,000");
     console.log(" ==> Render ok");
   });
+
   it("Change image product when hover", async () => {
     console.log("  --> Hover card check image");
     const wrapper = mount(ProductCard, { props: { product: mockProduct } });

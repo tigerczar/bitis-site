@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import Newsletter from "../../app/components/Newsletter.vue";
+import Newsletter from "~/components/Newsletter.vue";
 
 describe("Newsletter", () => {
   it("warning when email is incorrect", async () => {

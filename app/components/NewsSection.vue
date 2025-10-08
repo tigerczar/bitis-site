@@ -3,7 +3,7 @@
     <h2 class="text-black text-sm md:text-xl  mb-6">TIN TỨC BITIS</h2>
     <div class="flex flex-col md:flex-row gap-6">
       <div v-for="news in newsList" :key="news.id" class="news-card bg-white shadow overflow-hidden flex-1 flex flex-col  hover:shadow-lg transition">
-        <NuxtLink to="/"><img :src="news.image" :alt="news.title" class="w-full h-48 object-cover" /></NuxtLink>
+        <NuxtLink to="/"><img :src="news.image" :alt="news.title" class="w-full h-48 object-cover" loading="lazy" decoding="async" /></NuxtLink>
         <div class="flex-1 p-4 flex flex-col justify-between">
           <div>
             <NuxtLink to="/"><h3 class="news-title mb-2 text-sm md:text-lg leading-tight line-clamp-2 hover:text-[#1b4ea0]">{{ news.title }}</h3></NuxtLink>

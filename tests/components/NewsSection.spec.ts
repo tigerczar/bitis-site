@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import NewsSection from '../../app/components/NewsSection.vue'
+import NewsSection from '~/components/NewsSection.vue'
 
 describe('NewsSection', () => {
   it('Show correct heading', () => {
