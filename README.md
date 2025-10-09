@@ -12,6 +12,7 @@
 - **@nuxtjs/seo** 
 - **@nuxt/image**
 - **@nuxtjs/google-fonts**
+- **@heroicons/vue**
 - **Vitest**, **@vue/test-utils**
 - **Vercel** (Cloud Hosting & CDN)
 
@@ -40,6 +41,9 @@
 - Google Fonts loaded with font-display: swap for fast rendering.
 - Lighthouse-optimized (lazyload images, HTTP caching, chunk splitting).
 
+- Check report SEO & Performance with Lighthouse:
+
+![screencapture](https://raw.githubusercontent.com/tigerczar/bitis-site/main/public/images/seo-reports/screencapture-pagespeed-251009.jpg)
 ---
 
 
