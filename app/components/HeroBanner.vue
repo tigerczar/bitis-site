@@ -2,12 +2,26 @@
 <template>
   <div class="relative w-full overflow-hidden">
 
-    <img
+    <NuxtImg
       :src="isMobile ? banners[curIndex].mobile : banners[curIndex].desktop"
       :alt="'Banner ' + (curIndex+1)"
       class="w-full object-cover transition-all duration-500"
       :class="[isMobile ? 'h-[540px]' : 'h-[430px] md:h-[480px] lg:h-[600px]']"
+      sizes="(max-width: 767px) 10vw, 10vw"
+      format="webp"
+      :quality="70"
+      placeholder="blur"
+      :preload="curIndex === 0"
+      fetchpriority="high"
+      decoding="async"
     />
+
+     <!-- <img
+      :src="isMobile ? banners[curIndex].mobile : banners[curIndex].desktop"
+      :alt="'Banner ' + (curIndex+1)"
+      class="w-full object-cover transition-all duration-500"
+      :class="[isMobile ? 'h-[540px]' : 'h-[430px] md:h-[480px] lg:h-[600px]']"
+    /> -->
     
     <!-- arrow btn control -->
     <button aria-label="prev" v-if="!isMobile" @click="prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black bg-opacity-30 text-white p-2 rounded-full z-20">
