@@ -41,6 +41,7 @@ export default defineNuxtConfig({
   },
 
   seo: {
+    siteName: "Bitis site",
     siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000",
     indexable: process.env.NODE_ENV === 'production',
     trailingSlash: false,
@@ -50,10 +51,7 @@ export default defineNuxtConfig({
       title: "Bitis site",
       description: "Website bán giày Bitis",
       themeColor: "#ffffff",
-      ogImage: "/images/bitis-logo.svg",
-      metaTags: [
-        { property: "og:site_name", content: "Bitis site" }
-      ],
+      ogImage: "/images/bitis-logo.svg", 
     },
     robots: {
       rules: [{ userAgent: "*" }],
@@ -71,7 +69,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: "vi" },
-      title: "Biti’s Website",
+      title: "Bitis Website",
       meta: [
         { charset: "utf-8" },
         { name: "description", content: "Website ecommerce Bitis" },
