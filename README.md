@@ -41,7 +41,8 @@
 - Google Fonts loaded with font-display: swap for fast rendering.
 - Lighthouse-optimized (lazyload images, HTTP caching, chunk splitting).
 
-- Check report SEO & Performance with Lighthouse:
+### Check report SEO & Performance with Lighthouse:
+
 [Link Report](https://pagespeed.web.dev/analysis/https-bitis-site-vercel-app/dspiz0ml6t?form_factor=desktop&category=performance&category=accessibility&category=best-practices&category=seo&hl=en-US&utm_source=lh-chrome-ext)
 
 ![screencapture](https://raw.githubusercontent.com/tigerczar/bitis-site/main/public/images/seo-reports/screencapture-pagespeed-251009.jpg)
