@@ -101,10 +101,10 @@ Run Vitest for testing:
 
 ```bash
 # npm
-npm run text
+npm run test
 
 # pnpm
-pnpm build 
+pnpm run test 
 
 # npx
 npx vitest run
