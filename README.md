@@ -20,7 +20,7 @@
 
 ## Libraries
 
-- **UI:** TailwindCSS, Heroicons
+- **UI:** TailwindCSS
 - **SEO & Social:** Nuxt SEO Kit, sitemap.xml/robots.txt
 - **Images:** Nuxt Image 
 - **Fonts:** Google Fonts  

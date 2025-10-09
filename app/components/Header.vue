@@ -162,17 +162,39 @@
               <NuxtLink to="/" class="block px-8 py-3">ÊMBRACE</NuxtLink>
               <NuxtLink to="/" class="block px-8 py-3">HELIO BY BITIS</NuxtLink>
             </div>
-            <NuxtLink to="/" class="block px-6 py-4">NAM</NuxtLink>
-            <NuxtLink to="/" class="block px-6 py-4">NỮ</NuxtLink>
+            
+            <!-- <NuxtLink to="/" class="block px-6 py-4">NAM</NuxtLink> -->
+              <button @click="toggle('male')" class="w-full flex justify-between items-center px-6 py-4">
+              Nam
+              <svg :class="{'rotate-90': openDrop==='male'}" class="duration-150" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6" stroke-width="2"></path></svg>
+            </button>
+            <div v-if="openDrop==='male'" class="bg-gray-50">
+              <NuxtLink to="/" class="block px-8 py-3">BITI'S HUNTER</NuxtLink>
+              <NuxtLink to="/" class="block px-8 py-3">GOSTO</NuxtLink>
+              <NuxtLink to="/" class="block px-8 py-3">ÊMBRACE</NuxtLink>
+              <NuxtLink to="/" class="block px-8 py-3">HELIO BY BITIS</NuxtLink>
+            </div>
+            <!-- <NuxtLink to="/" class="block px-6 py-4">NỮ</NuxtLink> -->
+
+             <button @click="toggle('female')" class="w-full flex justify-between items-center px-6 py-4">
+              Nữ
+              <svg :class="{'rotate-90': openDrop==='female'}" class="duration-150" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6" stroke-width="2"></path></svg>
+            </button>
+            <div v-if="openDrop==='female'" class="bg-gray-50">
+              <NuxtLink to="/" class="block px-8 py-3">BITI'S HUNTER</NuxtLink>
+              <NuxtLink to="/" class="block px-8 py-3">GOSTO</NuxtLink>
+              <NuxtLink to="/" class="block px-8 py-3">ÊMBRACE</NuxtLink>
+              <NuxtLink to="/" class="block px-8 py-3">HELIO BY BITIS</NuxtLink>
+            </div>
             <NuxtLink to="/" class="block px-6 py-4">Teen nam</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4">Teen nữ</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4">BÉ TRAI</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4">BÉ GÁI</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4">PHỤ KIỆN</NuxtLink>
             <NuxtLink to="/" class="block px-6 py-4">CHIA SẺ</NuxtLink>
-            <button class="my-4 mx-6 border-2 border-blue-400 bg-white text-blue-600 w-full rounded py-2 font-bold flex items-center justify-center gap-2">
-              BÁN HÀNG B2B
-            </button>
+             <button class=" p-0 bg-transparent border-none w-[120px]"> 
+          <img class="rounded-[40px]" src="/images/b2b-button-img.jpg" alt="B2B button" loading="lazy" decoding="async">
+        </button> 
           </nav>
         </aside>
       </div>
