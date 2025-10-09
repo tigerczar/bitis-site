@@ -31,12 +31,12 @@
         <div class="text-xs text-black-500 mb-1">{{ product.size || "5" }} Size</div>
         <div class="text-xs text-black-500 mb-1">{{ product.size || "2" }} Color</div>
       </div>
-      <NuxtLink to="/" class="mb-1 leading-snug text-[15px]">{{ product.name }}</NuxtLink>
+      <NuxtLink to="/" class="mb-1 leading-snug text-[13px] sm:text-[14px] line-clamp-2">{{ product.name }}</NuxtLink>
 
       <!-- bottom info -->
       <div class="flex justify-between flex-wrap items-center gap-2 text-xs">
         <div class="inline sm:block">
-          <span class="text-[14px] sm:text-[18px]"> {{ product.price.toLocaleString() }} đ </span>
+          <span class="text-[13px] sm:text-[18px]"> {{ product.price.toLocaleString() }} đ </span>
           <span v-if="product.oldPrice" class="font-normal text-black line-through md:ml-1 mx-1 ml-0"> {{ product.oldPrice.toLocaleString() }} đ </span>
           <!-- discount -->
           <span v-if="product.discount" class="text-[#e71a3c] mb-1 p-[2px] border border-red-600 bg-[#ffe9ea]">-{{ product.discount }}%</span>
@@ -56,3 +56,21 @@ const props = defineProps({ product: Object });
 const hover = ref(false);
 const currentImage = computed(() => (props.product.images && props.product.images.length ? props.product.images[0] : props.product.image));
 </script>
+
+<style scoped>
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .md\:line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+</style>
