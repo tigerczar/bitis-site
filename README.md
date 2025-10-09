@@ -1,10 +1,10 @@
-# Biti's Website
+# Bitis site
 
 **Live demo:** https://bitis-site.vercel.app
 
 ---
 
-## Tech Stack
+## Overview Tech
 
 - **Nuxt 3** 
 - **TypeScript**
