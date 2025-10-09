@@ -6,13 +6,12 @@
 
 ## Overview Tech
 
-- **Nuxt 3** 
+- **Nuxt 4** 
 - **TypeScript**
 - **TailwindCSS**
 - **@nuxtjs/seo** 
 - **@nuxt/image**
 - **@nuxtjs/google-fonts**
-- **@heroicons/vue**
 - **Vitest**, **@vue/test-utils**
 - **Vercel** (Cloud Hosting & CDN)
 
