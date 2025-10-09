@@ -31,6 +31,7 @@
       <svg width="28" height="28" fill="none" stroke="currentColor"><path d="M12 4l8 8-8 8" stroke-width="2"/></svg>
     </button>
     <!-- dot control -->
+     
     <div class="absolute left-1/2 -translate-x-1/2 bottom-6 flex gap-3">
       <button
         v-for="(banner, i) in banners"
