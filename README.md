@@ -1,3 +1,49 @@
+# Biti's Website
+
+**Live demo:** https://bitis-site.vercel.app
+
+---
+
+## Tech Stack
+
+- **Nuxt 3** 
+- **TypeScript**
+- **TailwindCSS**
+- **@nuxtjs/seo** 
+- **@nuxt/image**
+- **@nuxtjs/google-fonts**
+- **@heroicons/vue**
+- **Vitest**, **@vue/test-utils**
+- **Vercel** (Cloud Hosting & CDN)
+
+---
+
+## Libraries
+
+- **UI:** TailwindCSS, Heroicons
+- **SEO & Social:** Nuxt SEO Kit, sitemap.xml/robots.txt
+- **Images:** Nuxt Image 
+- **Fonts:** Google Fonts  
+- **Testing:** Vitest, Vue Test Utils, jsdom
+
+## Testing
+
+- Unit/component tests with Vitest and Vue Test Utils.
+- Logger & NuxtLink are globally mocked in test files.
+- Coverage: drawer/menu, search, language selector, topbar links, more.
+
+---
+
+## SEO & Performance
+
+- Full meta config (Open Graph, Twitter card, favicon, robots, sitemap.xml).
+- Auto image conversion (WebP/AVIF) & responsive sizes.
+- Google Fonts loaded with font-display: swap for fast rendering.
+- Lighthouse-optimized (lazyload images, HTTP caching, chunk splitting).
+
+---
+
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
@@ -6,18 +52,13 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 
 Make sure to install dependencies:
 
-```bash
+```
+bash
 # npm
 npm install
 
 # pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+pnpm install  
 ```
 
 ## Development Server
@@ -29,13 +70,7 @@ Start the development server on `http://localhost:3000`:
 npm run dev
 
 # pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm dev 
 ```
 
 ## Production
@@ -47,13 +82,7 @@ Build the application for production:
 npm run build
 
 # pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm build 
 ```
 
 Locally preview production build:
@@ -63,13 +92,26 @@ Locally preview production build:
 npm run preview
 
 # pnpm
-pnpm preview
+pnpm preview 
+```
 
-# yarn
-yarn preview
+## Testing
 
-# bun
-bun run preview
+Run Vitest for testing:
+
+```bash
+# npm
+npm run text
+
+# pnpm
+pnpm build 
+
+# npx
+npx vitest run
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+---
+
