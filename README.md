@@ -1,6 +1,6 @@
 # Bitis site
 
-**Live demo:** <a href="https://bitis-site.vercel.app" target="_blank" rel="noopener">https://bitis-site.vercel.app</a>
+**Live demo:** [https://bitis-site.vercel.app](https://bitis-site.vercel.app)  
 
 ---
 
