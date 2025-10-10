@@ -99,7 +99,7 @@
           <li>Chính sách bảo mật</li>
           <li> Hướng dẫn sử dụng</li>
         </ul>
-        <span class="ml-4 p-5">Copyright © 2025 Biti's. Powered by Haravan Enterprise</span>
+        <span class="ml-4 p-5">Copyright © 2025 Biti's. Powered by Bitis Site</span>
       </div>
 
       <div class="sm:w-[33%] w-full flex justify-center items-center">
