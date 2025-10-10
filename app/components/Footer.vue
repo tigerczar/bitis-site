@@ -91,8 +91,9 @@
     </div>
 
     <!-- Thanh thông tin bản quyền/giấy phép dưới cùng -->
-    <div class="bg-gray-200 text-black py-4 px-2 text-center text-sm flex flex-col-reverse sm:flex-row  items-center justify-between gap-5">
-      <div class="sm:w-[33%] w-full">
+    <div class="bg-gray-200 text-black py-4 px-2 text-center text-sm flex justify-center items-center">
+      <div class="w-full md:max-w-7xl flex flex-col-reverse sm:flex-row  items-center justify-between gap-5">
+        <div class="sm:w-[33%] w-full">
         <ul class="flex sm:justify-between items-center justify-center gap-2 pb-4 md:pb-1">
           <li>Điều khoản</li>
           <li>Chính sách bảo mật</li>
@@ -106,6 +107,7 @@
       </div>
 
       <div class="sm:w-[33%] w-full leading-6">Giấy CNĐKDN: 0301340497 được cấp ngày 20/01/1992, được sửa đổi lần thứ 25 ngày 27/01/2022 bởi Sở Kế hoạch và Đầu tư TPHCM</div>
+      </div>
     </div>
   </footer>
 </template>
