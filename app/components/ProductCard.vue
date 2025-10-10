@@ -39,7 +39,7 @@
           <span class="text-[13px] sm:text-[18px]"> {{ product.price.toLocaleString() }} đ </span>
           <span v-if="product.oldPrice" class="font-normal text-black line-through md:ml-1 mx-1 ml-0"> {{ product.oldPrice.toLocaleString() }} đ </span>
           <!-- discount -->
-          <span v-if="product.discount" class="text-[#e71a3c] mb-1 p-[2px] border border-red-600 bg-[#ffe9ea]">-{{ product.discount }}%</span>
+          <span v-if="product.discount" class="text-[#e71a3c] text-[11px] md:text-[14px] mb-1 p-[1px] border border-red-600 bg-[#ffe9ea]">-{{ product.discount }}%</span>
         </div>
         <span class="text-red inline sm:block" v-if="product.sold">Đã bán: {{ product.sold }}</span>
       </div>
